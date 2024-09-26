@@ -13,8 +13,8 @@
 
             <form th:action="@{/rueditas/consulta}" method="post">
                 <div class="card" >
-                    <div class="alert alert-danger" role="alert" th:if="${requestConsultaModel.codigo != '00'}">
-                        <span th:text="${requestConsultaModel.mensaje}"></span>
+                    <div class="alert alert-danger" role="alert" th:if="${responseConsultaModel.codigo != '00'}">
+                        <span th:text="${responseConsultaModel.mensaje}"></span>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title mb-4 text-center">Rueditas</h5>
